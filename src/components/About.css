@@ -1,0 +1,205 @@
+/* تنسيق الحاوية */
+.about {
+    background-color: #f0f8ff; /* لون أزرق فاتح */
+    padding: 50px 0;
+}
+
+.about-container {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+/* تنسيق العنوان */
+.about-header h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* تنسيق المحتوى */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;  /* هذا يسمح بتنسيق العناصر في الشاشات الصغيرة */
+}
+
+/* تنسيق الصورة */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;  /* إضافة مساحة أسفل الصورة في الشاشات الصغيرة */
+}
+
+.about-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق النص */
+.about-text {
+  flex: 2;
+  padding-left: 40px;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* تنسيق العنوان النصي */
+.about-text h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* تنسيق الفقرات */
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* تنسيق المهارات */
+.skills {
+  margin-top: 20px;
+}
+
+.skills h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+/* تنسيق رابط تحميل السيرة الذاتية */
+.cv-download {
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries لتنسيق الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;  /* تحويل العرض إلى عمودي في الشاشات الصغيرة */
+    align-items: center;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    padding-left: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-img {
+    width: 200px; /* تصغير الصورة في الشاشات الصغيرة */
+    height: 200px;
+  }
+
+  .download-btn {
+    width: 100%; /* جعل الزر يأخذ عرض كامل */
+    text-align: center;
+  }
+}
+
+.about {
+    background-color: #f5f5f5; /* لون رمادي فاتح */
+    padding: 50px 0;
+}
+
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.about-header h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+
+.about-text {
+    max-width: 650px;
+    color: #333;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: #007bff; /* أو لون آخر مناسب */
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cv-download .download-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cv-download .download-btn:hover {
+    background-color: #0056b3;
+}
+/* تخصيص الصورة داخل قسم About */
+.about-image img {
+    width: 100%; /* اجعل الصورة تأخذ كامل العرض */
+    height: 100%; /* اجعل الصورة تأخذ كامل الارتفاع */
+    object-fit: cover; /* يجعل الصورة تغطي المساحة كاملة بدون تشويه */
+    border-radius: 50%; /* للحفاظ على الشكل الدائري للصورة */
+    max-width: 300px; /* تحديد الحد الأقصى للعرض */
+    object-position: center; /* تأكد من تموضع الصورة في المركز */
+}

@@ -1,0 +1,106 @@
+/* تنسيق الـ Header بشكل عام */
+.site-header {
+    background-color: #2c3e50;
+    padding: 10px 0;
+}
+
+/* تنسيق الـ Navbar */
+.navbar {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* تنسيق الشعار */
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* تخصيص زر الـ Toggler للجوال */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* تخصيص زر الاتصال */
+.custom-btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    background-color: #e65c00;
+}
+
+/* تخصيص الروابط في الـ Navbar */
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* تخصيص قائمة الروابط في الجوال */
+.collapse.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.collapse.navbar-collapse.show {
+    display: flex;
+}
+
+/* تخصيص الـ Navbar في الشاشات الصغيرة */
+@media (max-width: 992px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .navbar-nav.show {
+        display: flex;
+    }
+
+    .d-lg-flex {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav li a {
+        padding: 10px 20px;
+        background-color: #34495e;
+        text-align: center;
+        color: #fff;
+    }
+
+    .navbar-nav li a:hover {
+        background-color: #ff6600;
+    }
+}

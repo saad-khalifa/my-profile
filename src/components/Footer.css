@@ -1,0 +1,55 @@
+/* تنسيق الـ Footer */
+.site-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق معلومات الاتصال */
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: #ff6600;
+}
+
+/* تنسيق أيقونات التواصل الاجتماعي */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff6600;
+}
+
+/* عند التمرير فوق الروابط في الـ Footer */
+.site-footer .social-icons a:hover {
+    color: #ff6600;
+}
