@@ -39,7 +39,7 @@ const About = () => {
             </div>
             {/* رابط تحميل السيرة الذاتية */}
             <div className="cv-download">
-              <a href="../images/Document 11.pdf" download className="download-btn">
+              <a href="../images/saadkhalifa.pdf" download className="download-btn">
                 Download My CV
               </a>
             </div>
